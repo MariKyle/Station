@@ -4,7 +4,7 @@ using System.Collections;
 public class CameraController : MonoBehaviour 
 {
 
-	private float sensitivity = 10.0f;
+	private float sensitivity = 5.0f;
 
 	public float smooth = 40.0f; // high number = low smooth = close to 0 (current position), low number = high smooth = close to 1 (next position)
 	private PlayerController player;
@@ -18,7 +18,7 @@ public class CameraController : MonoBehaviour
 
 	public void Update ( )
 	{
-		transform.position = player.transform.position + Vector3.up * 2.5f; //attach camera to player's head 
+		//transform.position = player.transform.position + Vector3.up * 2.5f; //attach camera to player's head 
 		//transform.forward = player.transform.forward; // orient camera in direction of player
 
 		//set vertical rotation based on mouse Y input 
