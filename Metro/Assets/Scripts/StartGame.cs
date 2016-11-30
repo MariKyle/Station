@@ -4,6 +4,6 @@ using System.Collections;
 public class StartGame : MonoBehaviour {
 	IEnumerator Start () {
 		yield return new WaitForSeconds (25f);
-		Application.LoadLevel ("load");
+		Application.LoadLevel ("Load");
 	}
 }
